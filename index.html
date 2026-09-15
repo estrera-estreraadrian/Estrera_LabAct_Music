@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Music Search</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+</head>
+
+
+<body>
+
+  <main class="main-page">
+
+    <h1>Search Music</h1>
+
+
+    <form
+      class="search-bar"
+      id="searchForm"
+    >
+
+      <input
+        id="searchInput"
+        type="text"
+        placeholder="Search for a song or artist..."
+        aria-label="Search for music"
+      >
+
+      <button type="submit">
+        Search
+      </button>
+
+    </form>
+
+
+    <div class="challenges">
+
+      <button
+        type="button"
+        data-challenge="pop"
+      >
+        🎤 Pop
+      </button>
+
+
+      <button
+        type="button"
+        data-challenge="rock"
+      >
+        🎸 Rock
+      </button>
+
+
+      <button
+        type="button"
+        data-challenge="jazz"
+      >
+        🎷 Jazz
+      </button>
+
+
+      <button
+        type="button"
+        data-challenge="hip hop"
+      >
+        🎧 Hip-Hop
+      </button>
+
+    </div>
+
+
+    <div
+      id="loading"
+      class="loading"
+    >
+      Loading music...
+    </div>
+
+
+    <section
+      id="results"
+      class="results"
+    ></section>
+
+  </main>
+
+
+  <!-- API KEY -->
+
+  <script src="config.js"></script>
+
+  <!-- APPLICATION -->
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

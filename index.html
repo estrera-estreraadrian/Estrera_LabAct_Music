@@ -27,6 +27,8 @@
     <h1>Search Music</h1>
 
 
+    <!-- SEARCH -->
+
     <form
       class="search-bar"
       id="searchForm"
@@ -46,13 +48,16 @@
     </form>
 
 
+    <!-- MUSIC GENRES -->
+
     <div class="challenges">
 
       <button
         type="button"
         data-challenge="pop"
       >
-        🎤 Pop
+        <span class="genre-icon">🎤</span>
+        <span>Pop</span>
       </button>
 
 
@@ -60,7 +65,8 @@
         type="button"
         data-challenge="rock"
       >
-        🎸 Rock
+        <span class="genre-icon">🎸</span>
+        <span>Rock</span>
       </button>
 
 
@@ -68,7 +74,8 @@
         type="button"
         data-challenge="jazz"
       >
-        🎷 Jazz
+        <span class="genre-icon">🎷</span>
+        <span>Jazz</span>
       </button>
 
 
@@ -76,11 +83,14 @@
         type="button"
         data-challenge="hip hop"
       >
-        🎧 Hip-Hop
+        <span class="genre-icon">🎧</span>
+        <span>Hip-Hop</span>
       </button>
 
     </div>
 
+
+    <!-- LOADING -->
 
     <div
       id="loading"
@@ -90,6 +100,8 @@
     </div>
 
 
+    <!-- RESULTS -->
+
     <section
       id="results"
       class="results"
@@ -98,7 +110,7 @@
   </main>
 
 
-  <!-- API KEY -->
+  <!-- LAST.FM API KEY -->
 
   <script src="config.js"></script>
 
